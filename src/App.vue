@@ -60,7 +60,7 @@
   }
 </script>
 
-<style lang="scss">
+<style>
   body {
     background: #ffff55;
     color: #4900c2;
@@ -78,10 +78,10 @@
     justify-content: space-between;
     max-height: 50vh;
     height: 48vh;
-    a {
-      font-size: 26px;
-      font-weight: bold;
-    }
+  }
+  a {
+    font-size: 26px;
+    font-weight: bold;
   }
   [linkscontainer] {
     max-height: 25vh;

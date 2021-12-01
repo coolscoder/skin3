@@ -1,12 +1,12 @@
 <template>
   <div container>
     <div main>
-      <div>
+      <div header>
         <p title v-text="name" />
         <p v-text="description" />
       </div>
       <div linkscontainer>
-        <div v-for="(link, index) in links" v-bind:key="index">
+        <div links v-for="(link, index) in links" v-bind:key="index">
           <a :href="link.url" target="_blank" v-text="'+ '+link.label" />
         </div>
       </div>
@@ -20,38 +20,22 @@
     name: 'App',
     data: () => ({
       url: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80",
-      name: 'webbendr',
+      name: 'BOBBY',
       links: [
         {
-          label: 'Tictok',
+          label: 'Youtube',
           url: 'http://google.com',
         },
         {
-          label: 'SnapChat',
+          label: 'Spotify',
           url: 'http://google.com'
-        },
-        {
-          label: 'instargram',
-          url: 'http://google.com',
-        },
-        {
-          label: 'Twitter',
-          url: 'http://google.com',
-        },
-        {
-          label: 'SoundCloud',
-          url: 'http://google.com',
-        },
-        {
-          label: 'Linkedin',
-          url: 'http://google.com',
         },
         {
           label: 'Discord',
           url: 'http://google.com',
         },
         {
-          label: 'Telegram',
+          label: 'Tiktok',
           url: 'http://google.com',
         },
       ],
@@ -63,7 +47,7 @@
 <style>
   body {
     background: #ffff55;
-    color: #4900c2;
+    color: #000;
     font-family: 'Courier New';
     font-size: 12px;
     margin: 0;
@@ -72,25 +56,40 @@
     min-height: 100vh;
   }
   [main] {
-    padding: 2vh 15px;
+    padding: 2vh 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 50vh;
     height: 48vh;
   }
+  [header] {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
   a {
     font-size: 26px;
+    color: #000;
     font-weight: bold;
+    text-decoration: none;
   }
   [linkscontainer] {
-    max-height: 25vh;
-    overflow-y: scroll;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  [links] {
+    border-bottom: 1px dotted black;
+    padding: 0 15px;
   }
   [title] {
-    font-size: 48px;
+    font-size: 80px;
     font-weight: bold;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   [landingimg] {
     width: 100%;

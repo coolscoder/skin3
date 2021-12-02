@@ -39,7 +39,7 @@
           url: 'http://google.com',
         },
       ],
-      description: "Loren ipsum dolor set a met, consectetur adipising elit, sed to eiusmod tempor incididunt ut labore et dolore magnaaliqua.",
+      description: "THIS IS THE BEST DESCRIPTION IN THE FREAING WORLD ITS SO GREAT.",
   })
   }
 </script>
